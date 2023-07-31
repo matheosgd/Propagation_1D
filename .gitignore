@@ -1,0 +1,11 @@
+QDUtilLib-main/
+*.o
+*.exe
+*.mod
+comp.txt
+mat
+pot
+prop
+psif
+psit
+results
