@@ -1,0 +1,164 @@
+&BASIS_INFO 
+basis_name = 'boxAB'
+nb = 500                            !nb = 60 bien
+nq = 600
+a = -1.75                          !a = -1.75
+b = 1.75                           !b = 1.75
+/
+
+&POTENTIAL_NAME                    !write 'harmonique' or 'Morse' or 'Double_puit' or 'escalier'
+pot_name = 'Double_puit'               
+/
+
+&OPERATEUR_PARAMETER_HARMONIQUE
+mass = 1.0
+raideur = 1.0 
+x0 = 0.0 
+/
+
+&OPERATEUR_PARAMETER_MORSE
+mass = 1744.60504565               !HF : = 1744.60504565
+De = 0.2250                        !HF : = 0.2250
+alpha = 1.1741                     !HF : = 1.1741
+Re = 1.73290                       !HF : = 1.73290
+/
+
+&OPERATEUR_PARAMETER_DOUBLE_PUIT
+mass = 20.0                        !conseillé : = 20
+/
+
+&OPERATEUR_PARAMETER_ESCALIER
+mass = 1.0
+V_0 = 0.0
+V_1 = 5
+V_2 = 10
+x1 = 2.5
+x2 = 5.0
+/
+
+&PSI0_PARAMETERS 
+sigma = 0.4                 !sqrt(2) = 1.4142135
+Q0 = -1.2
+P0 = 0
+phasis = 0
+/
+
+&PROPAGATION_PARAMETER             !write 'spectral' or 'euler' or 'Taylor_4' or 'RK4' or 'SIL'
+t0 = 0 
+tf = 400
+dt = 400
+name_propa = 'spectral'
+epsilon = 0.00000001
+/
+
+&PROPAGATION_PARAMETER 
+t0 = 0 
+tf = 800
+dt = 400
+name_propa = 'spectral'            
+epsilon = 0.00000001
+/
+
+&PROPAGATION_PARAMETER 
+t0 = 0 
+tf = 1200
+dt = 400
+name_propa = 'spectral'            
+epsilon = 0.00000001
+/
+
+&PROPAGATION_PARAMETER 
+t0 = 0 
+tf = 1600
+dt = 400
+name_propa = 'spectral'            
+epsilon = 0.00000001
+/
+
+&PROPAGATION_PARAMETER 
+t0 = 0 
+tf = 2000
+dt = 400
+name_propa = 'spectral'            
+epsilon = 0.00000001
+/
+
+&PROPAGATION_PARAMETER 
+t0 = 0 
+tf = 2400
+dt = 400
+name_propa = 'spectral'            
+epsilon = 0.00000001
+/
+
+&PROPAGATION_PARAMETER 
+t0 = 0 
+tf = 2800
+dt = 400
+name_propa = 'spectral'            
+epsilon = 0.00000001
+/                         !toujours mettre un ligne vide à la fin
+
+&PROPAGATION_PARAMETER 
+t0 = 0 
+tf = 3200
+dt = 400
+name_propa = 'spectral'            
+epsilon = 0.00000001
+/
+
+&PROPAGATION_PARAMETER 
+t0 = 0 
+tf = 3600
+dt = 400
+name_propa = 'spectral'            
+epsilon = 0.00000001
+/
+
+&PROPAGATION_PARAMETER 
+t0 = 0 
+tf = 4000
+dt = 400
+name_propa = 'spectral'            
+epsilon = 0.00000001
+/
+
+&PROPAGATION_PARAMETER 
+t0 = 0 
+tf = 4400
+dt = 400
+name_propa = 'spectral'            
+epsilon = 0.00000001
+/
+
+&PROPAGATION_PARAMETER 
+t0 = 0 
+tf = 4800
+dt = 400
+name_propa = 'spectral'            
+epsilon = 0.00000001
+/
+
+&PROPAGATION_PARAMETER 
+t0 = 0 
+tf = 5200
+dt = 400
+name_propa = 'spectral'            
+epsilon = 0.00000001
+/
+
+&PROPAGATION_PARAMETER 
+t0 = 0 
+tf = 5600
+dt = 400
+name_propa = 'spectral'            
+epsilon = 0.00000001
+/
+
+&PROPAGATION_PARAMETER 
+t0 = 0 
+tf = 6000
+dt = 400
+name_propa = 'spectral'            
+epsilon = 0.00000001
+/

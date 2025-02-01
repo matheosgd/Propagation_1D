@@ -1,0 +1,76 @@
+&BASIS_INFO 
+basis_name = 'boxAB'
+nb = 60                            !nb = 60 bien
+nq = 70
+a = 0                              !a = 7.5
+b = 7.5                            !b = 7.5
+/
+
+&POTENTIAL_NAME                    !write 'harmonique' or 'Morse' or 'Double_puit' or 'escalier'
+pot_name = 'escalier'               
+/
+
+&OPERATEUR_PARAMETER_HARMONIQUE
+mass = 1.0
+raideur = 1.0 
+x0 = 0.0 
+/
+
+&OPERATEUR_PARAMETER_MORSE
+mass = 1744.60504565               !HF : = 1744.60504565
+De = 0.2250                        !HF : = 0.2250
+alpha = 1.1741                     !HF : = 1.1741
+Re = 1.73290                       !HF : = 1.73290
+/
+
+&OPERATEUR_PARAMETER_DOUBLE_PUIT
+mass = 20.0                        !conseillé : = 20
+/
+
+&OPERATEUR_PARAMETER_ESCALIER
+mass = 1.0
+V_0 = 0.0
+V_1 = 15
+V_2 = 30
+x1 = 2.5
+x2 = 5.0
+/
+
+&PSI0_PARAMETERS 
+sigma = 1.4142135                  !sqrt(2) = 1.4142135
+Q0 = 0
+P0 = 0
+phasis = 0
+/
+
+&PROPAGATION_PARAMETER             !write 'spectral' or 'euler' or 'Taylor_4' or 'RK4' or 'SIL' 
+t0 = 0 
+tf = 100.0                         
+dt = 0.1
+name_propa = 'SIL'    
+epsilon = 0.00000001
+/
+
+&PROPAGATION_PARAMETER 
+t0 = 0 
+tf = 5.0
+dt = 0.001
+name_propa = 'euler'            
+epsilon = 0.00000001
+/
+
+&PROPAGATION_PARAMETER 
+t0 = 0 
+tf = 5.0
+dt = 0.001
+name_propa = 'Taylor_4'            
+epsilon = 0.00000001
+/
+
+&PROPAGATION_PARAMETER 
+t0 = 0 
+tf = 5.0
+dt = 0.001
+name_propa = 'SIL'            
+epsilon = 0.00000001
+/
