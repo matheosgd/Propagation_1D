@@ -52,7 +52,7 @@ The evolution over time of the wavepacket properties (energy, position, impulsio
 
 The final vector of the wavepacket on the simulation grid is printed in the "psif" file and can be traced via gnuplot whith the "trace_psif.gp" script.  
 
-More detailed information about the model will be found in the futur Manual "Propagation_1D_Manual.pdf"  
+More detailed information about the model will be found in the futur Manual "Propagation_1D_Manual.pdf".  
 
 
 # Setting up environment
@@ -224,7 +224,7 @@ The application can be compiled and executed using either the makefile or the ru
     - "all" : Performs the same actions as "lib"" in addition also to compile the source files of the tests and applications and link them with the static library file into executables.  
     - "app" : Performs the same actions as "all" in addition also to compile the application source file, link it with the library into an executable and execute it using the indicated data file and direct the several output files into the corresponding P1D_<name of the app>_<name of the data file>_<name of the output file kind>.log output file.  
 
-The different output files are : 
+The different output files are :  
     - "results" the standard output of the code.  
     - "matrix" that displays the elements of some matrices for checking purposes.  
     - "potential" that contains the values of the potential on each grid point.  
