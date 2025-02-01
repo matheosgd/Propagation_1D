@@ -1,0 +1,7 @@
+OBJ/*
+*.mod
+*.a
+*.exe
+OUT/*
+*.log
+ARCH/*
